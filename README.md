@@ -39,3 +39,8 @@
 - git commit -m "Nội dung..."
     + Để đưa những file ở vùng Staging area chuyển sang Repository, mục đích là tạo 1 phiên bản mới và lưu vào lịch sử của Repository
     + Với điều kiện cấc têp tin, thư mục được thay đổi đã phải nằm trong Staging area
+
+## Quy trình
+- Khi thêm, sửa, xóa file thì vẫn đang ở Working directory (chạy lệnh git status, những file màu đỏ là nằm trong Working directory)
+- Sau đó chạy lệnh git add ten_file thì thông tin của các file sẽ được lưu vào Staging area, Staging area có tác dụng sắp xếp lại những file đã add vào (giả sử có 1 file được thay đổi, ta add vào lần 1, sau đó ta lại sửa file đó và add vào lần 2, thì Staging area chỉ lấy lần 2. Chạy lệnh git status, những file màu xanh lá là nằm trong STaging area)
+- Sau đó chạy lệnh git commit -m "Nội dung commit...". Lúc này những file đã được đánh dấu ở vùng Staging area sẽ được lưu vào Repository
