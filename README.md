@@ -38,7 +38,15 @@
 
 - git commit -m "Nội dung..."
     + Để đưa những file ở vùng Staging area chuyển sang Repository, mục đích là tạo 1 phiên bản mới và lưu vào lịch sử của Repository
-    + Với điều kiện cấc têp tin, thư mục được thay đổi đã phải nằm trong Staging area
+    + Với điều kiện cấc têp tin, thư mục được thay đổi đã phải nằm trong Staging area\
+
+- git log : giúp bạn xem lại thông tin lịch sử commit, nhằm giám sát sự thay đổi của dự án. Commit mới sẽ hiện bên trên, commit cũ sẽ hiện bên dưới (nếu gặp chữ END thì nhấn phím q để thoát)
+
+- git show commit_id : dùng để xem chi tiết 1 commit
+
+- git diff : xem sự thay đổi của 1 file sau khi chúng ta chỉnh sửa (file đó vẫn đang ở khu vực Working directory)
+
+- gitk : mở dashboard xem trực quan hơn
 
 ## Quy trình
 - Khi thêm, sửa, xóa file thì vẫn đang ở Working directory (chạy lệnh git status, những file màu đỏ là nằm trong Working directory)
