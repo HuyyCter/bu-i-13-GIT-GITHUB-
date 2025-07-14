@@ -52,6 +52,14 @@
 
 - git reset HEAD ten_file hoặc git reset ten_file : chuyển file đó từ vùng Staging area trở lại vùng Working directory
 
+- git reset --soft commit_id 
+    + Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git commit
+    + Tức là từ Repository về lại Staging area
+
+- git reset --mixed commit_id
+    + Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git add
+    + Tức là từ Repository về lại Working directory
+
 ## Quy trình
 - Khi thêm, sửa, xóa file thì vẫn đang ở Working directory (chạy lệnh git status, những file màu đỏ là nằm trong Working directory)
 - Sau đó chạy lệnh git add ten_file thì thông tin của các file sẽ được lưu vào Staging area, Staging area có tác dụng sắp xếp lại những file đã add vào (giả sử có 1 file được thay đổi, ta add vào lần 1, sau đó ta lại sửa file đó và add vào lần 2, thì Staging area chỉ lấy lần 2. Chạy lệnh git status, những file màu xanh lá là nằm trong Staging area)
