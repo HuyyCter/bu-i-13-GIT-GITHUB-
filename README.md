@@ -42,13 +42,17 @@
 
 - git log : giúp bạn xem lại thông tin lịch sử commit, nhằm giám sát sự thay đổi của dự án. Commit mới sẽ hiện bên trên, commit cũ sẽ hiện bên dưới (nếu gặp chữ END thì nhấn phím q để thoát)
 
-- git show commit_id : dùng để xem chi tiết 1 commit
+- git show commit_id : dùng để xem chi tiết 1 commit (xem trong git log)
 
 - git diff : xem sự thay đổi của 1 file sau khi chúng ta chỉnh sửa (file đó vẫn đang ở khu vực Working directory)
 
 - gitk : mở dashboard xem trực quan hơn
 
+- git checkout --ten_file : bỏ đi những thay đổi của file, để file đó trở về như lúc ban đầu
+
+- git reset HEAD ten_file hoặc git reset ten_file : chuyển file đó từ vùng Staging area trở lại vùng Working directory
+
 ## Quy trình
 - Khi thêm, sửa, xóa file thì vẫn đang ở Working directory (chạy lệnh git status, những file màu đỏ là nằm trong Working directory)
-- Sau đó chạy lệnh git add ten_file thì thông tin của các file sẽ được lưu vào Staging area, Staging area có tác dụng sắp xếp lại những file đã add vào (giả sử có 1 file được thay đổi, ta add vào lần 1, sau đó ta lại sửa file đó và add vào lần 2, thì Staging area chỉ lấy lần 2. Chạy lệnh git status, những file màu xanh lá là nằm trong STaging area)
+- Sau đó chạy lệnh git add ten_file thì thông tin của các file sẽ được lưu vào Staging area, Staging area có tác dụng sắp xếp lại những file đã add vào (giả sử có 1 file được thay đổi, ta add vào lần 1, sau đó ta lại sửa file đó và add vào lần 2, thì Staging area chỉ lấy lần 2. Chạy lệnh git status, những file màu xanh lá là nằm trong Staging area)
 - Sau đó chạy lệnh git commit -m "Nội dung commit...". Lúc này những file đã được đánh dấu ở vùng Staging area sẽ được lưu vào Repository
