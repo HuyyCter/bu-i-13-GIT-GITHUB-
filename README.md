@@ -68,6 +68,12 @@
 
 - git checkout ten_nhanh : chuyển sang nhánh khác
 
+- git merge ten_nhanh 
+    + Để merge nhánh <ten_nhanh> vào trong nhánh hiện tại
+    + Ví dụ : ta có 2 nhánh A và B, để hợp nhất nhánh B vào trong nhánh A ta làm như sau. Dùng lệnh git checkout A để chuyển sang nhánh A, sau đó chạy lệnh git merge B để hợp nhất nhánh B vào nhánh A
+
+- git branch -D ten_nhanh : để xóa nhánh
+
 ## Quy trình
 - Khi thêm, sửa, xóa file thì vẫn đang ở Working directory (chạy lệnh git status, những file màu đỏ là nằm trong Working directory)
 - Sau đó chạy lệnh git add ten_file thì thông tin của các file sẽ được lưu vào Staging area, Staging area có tác dụng sắp xếp lại những file đã add vào (giả sử có 1 file được thay đổi, ta add vào lần 1, sau đó ta lại sửa file đó và add vào lần 2, thì Staging area chỉ lấy lần 2. Chạy lệnh git status, những file màu xanh lá là nằm trong Staging area)
