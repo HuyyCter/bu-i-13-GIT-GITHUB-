@@ -78,3 +78,11 @@
 - Khi thêm, sửa, xóa file thì vẫn đang ở Working directory (chạy lệnh git status, những file màu đỏ là nằm trong Working directory)
 - Sau đó chạy lệnh git add ten_file thì thông tin của các file sẽ được lưu vào Staging area, Staging area có tác dụng sắp xếp lại những file đã add vào (giả sử có 1 file được thay đổi, ta add vào lần 1, sau đó ta lại sửa file đó và add vào lần 2, thì Staging area chỉ lấy lần 2. Chạy lệnh git status, những file màu xanh lá là nằm trong Staging area)
 - Sau đó chạy lệnh git commit -m "Nội dung commit...". Lúc này những file đã được đánh dấu ở vùng Staging area sẽ được lưu vào Repository
+
+## Giới thiệu GITHUB
+- GitHub là 1 hệ thống quản lý dự án và phiên bản code
+- GitHub có 1 dịch vụ nổi tiếng cung cấp kho lưu trữ mã nguồn GIT cho các dự án phần mềm. GitHub có đầy đủ những tính năng của GIT
+- Giúp đồng bộ source code của team lên 1 server
+
+## Các câu lệnh GITHUB phổ biến
+- git pull origin ten_nhanh : kéo code từ GITHUB về máy
